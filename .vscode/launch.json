@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "LLDB Debug ROS Node",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/devel/lib/hello_ros/hello_ros_node",
+      "args": [],
+      "env": {
+        "ROS_MASTER_URI": "http://localhost:11311",
+        "ROS_PACKAGE_PATH": "${workspaceFolder}/src"
+      },
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "catkin_make with clang",
+      "stopOnEntry": false
+    }
+  ]
+}
